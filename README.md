@@ -17,10 +17,14 @@ Insert in your /etc/hosts following line :
    
 
 Then execute :
-
+   
+   
+   
    mkdir /root/images
    
-   (cd /root/images ; zcat /tmp/oc-cluste-up-allinone.cpio.gz |cpio -ivd)
+   tar zxvf /tmp/oc-cluster-up-scripts.tar.gz
+   
+   .... TODO DOCS ...
    
    (cd /root/images/scritps; bash 01-rundr.bash; bash 02-oc-cluster-up.bash; bash oc-cluster-up.bash)
    
