@@ -5,6 +5,8 @@ Openshift All In One without network
 # Software
 Thirst execute:
 
+   yum install docker -y
+
    yum install epel-release -y
 
    yum install jq -y
