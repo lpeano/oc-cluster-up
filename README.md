@@ -7,6 +7,10 @@ Thirst execute:
 
    yum install docker -y
 
+   systemctl enable docker.service
+   
+   systemctl start docker.service
+   
    yum install epel-release -y
 
    yum install jq -y
