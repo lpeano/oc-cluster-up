@@ -21,7 +21,7 @@ Thirst execute:
 
 Insert in your /etc/hosts following line :
 
-"<your-primary-ip> oclab"
+\<your-primary-ip\> oclab
    
 
 Then execute :
