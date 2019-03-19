@@ -37,3 +37,5 @@ Then execute :
    (cd /root/images/scritps; bash 01-rundr.bash; bash 02-oc-cluster-up.bash; bash oc-cluster-up.bash)
    
 Now you have openshift cluster up running.
+
+Next time do only "bash oc-cluster-up.bash" (no internet connection necessary, all images are under images/volumes/registry/).
