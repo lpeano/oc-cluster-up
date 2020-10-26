@@ -1,6 +1,8 @@
 INSTALLPATH="/root/images/"
 CERTSPATH=${INSTALLPATH}/certs/
 mkdir  $INSTALLPATH/backup
+mkidr $CERTSPATH
+echo nopass|openssl  genrsa -passout stdin -des3 -out ${CERTSPATH}/server.key 2048
 openssl req -new -key  ${CERTSPATH}/server.key -out  ${CERTSPATH}/server.csr -config ${CERTSPATH}/cert.csan.config -batch
 openssl x509 -req -days 3650 -in ${CERTSPATH}/server.csr -signkey ${CERTSPATH}/server.key -out ${CERTSPATH}/server.crt
 echo backingup /etc/docker/daemon.json to $INSTALLPATH/backup
